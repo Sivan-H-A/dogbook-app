@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { Button } from 'react-bootstrap';
+import { Link, Redirect } from 'react-router-dom';
+import './HomePage.css';
 
 export default function HomePage() {
+    function moveToBreeds(){
+        return <Link to="/breeds"></Link>
+    }
     return (
-        <div className="container">
-            HomePage
+        <div className="container c-home">
+           <h1 className="text-center display-1">Dog Book</h1>
+           <h3 className="text-center">Woman's Best Friend</h3>
+           <Link to="/breeds">
+                <Button variant="info" >Woof!</Button>
+            </Link>
         </div>
     )
 }
