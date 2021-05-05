@@ -29,7 +29,8 @@ function BreedsPage() {
                         Change Imgae</Button>
                 </Col >
             </Row>
-           <Breeds breedsList={filterText ? breedsList.filter(breed=>breed.name.includes(filterText)): breedsList} changeImg={changeImg}/> 
+           <Breeds breedsList={filterText ? breedsList.filter(breed=>(breed.name).toLowerCase().includes(filterText.toLowerCase())): breedsList} 
+                changeImg={changeImg}/> 
         </Container>
     )
 }

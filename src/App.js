@@ -14,7 +14,7 @@ function App() {
       <HashRouter>
         <BreedsNavbar/>
         <Switch>
-          <Route exact path="/" ><HomePage/></Route>
+          <Route exact path="/home" ><HomePage/></Route>
           <Route exact path="/breeds"><BreedsPage/></Route>
           <Route exact path="/breeds/:breed"><BreedDetailsPage/></Route>          
           <Route path="/"><NotFoundPage/></Route>          
