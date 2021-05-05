@@ -1,0 +1,12 @@
+.p-breeds{
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.modal-title{
+    font-family: 'New Tegomin', serif;
+    width: 100%;
+}
+.modal-body{
+    text-align: center;
+}
